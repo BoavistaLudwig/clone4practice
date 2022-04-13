@@ -68,7 +68,7 @@ select {
 
 body {
   font-family: "Nunito", sans-serif;
-  max-width: 1200px;
+  display: flex;
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -84,22 +84,26 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
-  background-color: blanchedalmond;
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
+  overflow-y: scroll;
   padding-bottom: 60px;
-  background-image: url("bg-a.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  /*   object-fit: cover; */
+  position: relative;
 }
 
-/* .container-left img {
-  object-fit: fill;
-  object-fit: cover;
-} */
+.container-left::before {
+  content: "";
+  position: absolute;
+  background: url("bg-a.jpg");
+  background-size: 100%;
+  background-position: center bottom;
+  /*   background-attachment: scroll; */
+  /*   bottom: 0;
+  left: 0; */
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
 
 .container-right {
   display: flex;
@@ -145,6 +149,16 @@ video {
 .info-box > p {
   font-size: 19px;
   color: var(--brown-color);
+}
+
+.info-box span {
+  vertical-align: middle;
+}
+
+.info-box span > img {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
 }
 
 .container-left .content {
