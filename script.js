@@ -3,8 +3,10 @@ const api_time_url = "https://worldtimeapi.org/api/timezone/Europe/Lisbon";
 const weather = document.querySelector(".weather");
 const api_weather_url =
   "https://api.openweathermap.org/data/2.5/weather?lat=41.15&lon=-8.61024&appid=9f3e12bb5cf04b50d55963aba3526d3d&units=metric";
+const cloud_img = document.getElementById("cloud_img");
 
 getTime();
+getTemperature();
 getWeather();
 
 async function getTime() {
@@ -16,10 +18,20 @@ async function getTime() {
   clock.innerHTML = hour;
 }
 
-async function getWeather() {
+async function getTemperature() {
   const response = await fetch(api_weather_url);
   const data = await response.json();
   const temp = data.main.temp;
 
   weather.innerHTML = temp + "°C";
 }
+
+async function getWeather() {
+  const response = await fetch(api_weather_url);
+  const data = await response.json();
+  const weather = data.weather[0].icon;
+  const icon_url = "https://openweathermap.org/img/wn/" + weather + "@2x.png";
+  document.getElementById("cloud_img").src = icon_url;
+}
+
+// "http://openweathermap.org/img/wn/10d@2x.png
