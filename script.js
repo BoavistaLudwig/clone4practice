@@ -30,8 +30,7 @@ async function getWeather() {
   const response = await fetch(api_weather_url);
   const data = await response.json();
   const weather = data.weather[0].icon;
-  const icon_url = "https://openweathermap.org/img/wn/" + weather + "@2x.png";
+  const icon_url = "https://openweathermap.org/img/wn/" + weather + ".png";
+
   document.getElementById("cloud_img").src = icon_url;
 }
-
-// "http://openweathermap.org/img/wn/10d@2x.png
