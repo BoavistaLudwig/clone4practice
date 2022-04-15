@@ -7,7 +7,8 @@ const cloud_img = document.getElementById("cloud_img");
 
 getTime();
 getTemperature();
-getWeather();
+getWeatherIcon();
+getCopy();
 
 async function getTime() {
   const response = await fetch(api_time_url);
@@ -26,7 +27,7 @@ async function getTemperature() {
   weather.innerHTML = temp + "°C";
 }
 
-async function getWeather() {
+async function getWeatherIcon() {
   const response = await fetch(api_weather_url);
   const data = await response.json();
   const weather = data.weather[0].icon;
