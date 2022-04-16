@@ -90,21 +90,10 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 60px;
-  position: relative;
-}
-
-.container-left::before {
-  content: "";
-  position: absolute;
-  background: url("bg-a.jpg");
+  background-image: url("bg-a.jpg");
   background-size: 100%;
   background-position: center bottom;
-  background-attachment: scroll;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  background-repeat: no-repeat;
 }
 
 .container-right {
