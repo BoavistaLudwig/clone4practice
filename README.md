@@ -6,4 +6,4 @@ Cloning for practice!
 - I used the modern-css-reset by @hankchizljaw
 - I used https://beta.openai.com/playground to create all text
 
-=> check it out at https://boavistaludwig.github.io/1clone4practice/
+=> check it out at https://boavistaludwig.github.io/clone4practice_1/
