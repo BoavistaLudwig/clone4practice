@@ -109,12 +109,12 @@ body {
 }
 
 video {
-  height: 100%;
+  /*   height: 100%; */
   width: 100%;
   background-position: center;
   background-image: cover;
-  top: 0;
-  left: 0;
+  /*   top: 0;
+  left: 0; */
 }
 
 .info-box {
@@ -256,14 +256,14 @@ video {
 
   .container-right {
     width: 100%;
-    height: 100%;
+    /*     height: 100%; */
     margin-bottom: 0;
     padding-bottom: 60px;
   }
 
   .container-left {
     width: 100%;
-    height: 100%;
+    /*     height: 100%; */
     background-color: rgb(0, 200, 255);
   }
 }
