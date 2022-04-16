@@ -2,8 +2,8 @@
 
 Cloning for practice!
 
-- I cloned https://rebase.co/portugal and modified it a bit for a group that I run
+- I cloned https://rebase.co/portugal and modified it a bit for a group that I run in Portugal
 - I used the modern-css-reset by @hankchizljaw
-- I used https://beta.openai.com/playground to create all copy
+- I used https://beta.openai.com/playground to create all text
 
-=> Check live at https://boavistaludwig.github.io/1clone4practice/
+=> check it out at https://boavistaludwig.github.io/1clone4practice/
