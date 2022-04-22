@@ -89,7 +89,7 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   padding-bottom: 60px;
-  background-image: url("bg-a.jpg");
+  background-image: url("src/bg-a.jpg");
   background-size: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
